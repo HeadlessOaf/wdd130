@@ -26,7 +26,7 @@ header img {
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
