@@ -16,6 +16,10 @@
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
+
+  display: grid;
+  grid-template-columns: repeat(5,40%);
+  grid-template-rows: repeat(5, 60%);
 }
 
 header img {
@@ -70,11 +74,21 @@ nav, p, section, article {
 /* Class */
 
 .vis {
-  border: 1px dotted white;
+  border: 10px solid white;
   background-color: white;
-  width: 280px;
+  width: 350px;
   opacity: 0.8;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .socialmedia-a {
   text-decoration: none;
@@ -115,13 +129,43 @@ nav, p, section, article {
 .gallery {
   background-color: var(--accent2-color);
   border: 1px solid var(--secondary-color);
-  margin: 16px;
-  padding: 4px;
+  margin: 24px;
+  padding: 15px;
+  height: 200px;
+  width: 1250px;
+  margin-left: -222px;
+  margin-right: 700px;
+  bottom: 90px;
+  
+  
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+
+.gallery img {
+  width: 180px;
   height: auto;
-  width: 610px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin: 5px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.gallery figcaption {
+  display: grid;
+  grid-template-columns: repeat(3, 1px);
+  grid-template-rows: repeat(2, 1px);
+  
+  
+  font-size: 0.9em;
+  color: var(--primary-color);
+  bottom: -133px;
+  left: -140px;
+  position: relative;
 }
 
 .history {
@@ -139,3 +183,4 @@ nav, p, section, article {
   text-align: center;
   font-size: 1.2em;
 }
+
