@@ -17,15 +17,22 @@ header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
 
+  position: relative;
+  left: 25px;
+  
   display: grid;
   grid-template-columns: repeat(5,40%);
   grid-template-rows: repeat(5, 60%);
 }
 
 header img {
+
+
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
+  
 
 }
 
@@ -60,7 +67,7 @@ article {
 position: absolute;
 left: 0px;
 padding: 16px;
-bottom: 200px;
+bottom: 50px;
 opacity: 1;
 background-color: var(--secondary-color);
 
@@ -79,52 +86,80 @@ nav, p, section, article {
   width: 350px;
   opacity: 0.8;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   margin: 10px;
+;
+
+  position: relative;
+  bottom: -20px;
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 
 
 .socialmedia-a {
   text-decoration: none;
-  border: 1px solid var(--secondary-color);
-  width: 400px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: -10px;
+  position: relative;
+  
 }
 
 .space {
   border: 1px solid var(--secondary-color);
   background-color: var(--accent1-color);
-  text-align: center;
-  color: black
+  color: black;
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero {
   position: relative;
+  left: 25px;
+  
+  
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
+  box-shadow: var(--primary-color) 0px 0px 10px;
+  
 }
+
 
 .hero article img {
   float: right;
   width: 125px;
   height: auto;
   margin: 5px;
-  opacity: 1;;
+  opacity: 1;
+  
 }
 
-
+.in-box {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--accent2-color);
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -60px;
+}
 
 .gallery {
   background-color: var(--accent2-color);
@@ -172,15 +207,54 @@ nav, p, section, article {
   color: white;
   background-color: var(--accent1-color);
   border: 1px solid var(--secondary-color);
-  margin: 16px;
+  margin: 50px;
   padding: 4px;
-  height: auto;
-  width: 610px;
+  height: 600px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
-  bottom: 90px;
-  position: relative;
+
   text-align: center;
   font-size: 1.2em;
+}
+
+.history section {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+.history p {
+  width: 20%;
+  bottom: 250px;
+  position: relative;
+  display: inline-block;
+}
+.p1 {
+  font-size: 17px;
+  left: -200px;
+}
+.p2 {
+  font-size: 17px;
+  left: 200px;
+}
+
+.history img {
+  width: 400px;
+  height: auto;
+  display: block;
+ text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--primary-color) 0px 20px 10px;
+  bottom: -100px;
+  position: relative;
+
+
+
 }
 
