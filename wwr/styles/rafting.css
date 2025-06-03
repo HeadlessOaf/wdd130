@@ -257,3 +257,8 @@ nav, p, section, article {
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* Map */
+.map {
+  border: 0;
+}
